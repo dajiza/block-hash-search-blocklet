@@ -1,0 +1,157 @@
+@import '~antd/dist/antd.css';
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+.app {
+}
+
+.app-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.app-header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #282c34;
+  color: white;
+  font-size: calc(10px + 2vmin);
+}
+
+.app-link {
+  color: #4f6af5;
+}
+/* home */
+.home {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+.home .title {
+  margin-top: -200px;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  font-size: 2rem;
+}
+.search-input {
+  max-width: 600px;
+  width: 80%;
+}
+/* loading */
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+/* error */
+.error {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  font-size: 2rem;
+}
+/* transaction */
+.transaction {
+  padding: 24px;
+}
+.transaction .title {
+  margin-bottom: 1em;
+  color: rgb(53, 63, 82);
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.transaction .summary .paragraph {
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+}
+.transaction .summary .paragraph {
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+}
+.transaction .summary .detail {
+  margin-top: 2rem;
+  font-size: 0.875rem;
+}
+.transaction .summary .detail .rows {
+  display: flex;
+  padding: 0.8rem 0px;
+  border-bottom: 1px solid rgb(223, 227, 235);
+}
+.transaction .summary .detail .label {
+  flex-shrink: 0;
+  width: 50%;
+  color: rgb(103, 113, 133);
+}
+.transaction .summary .detail .content {
+  overflow: hidden;
+  width: 100%;
+  text-overflow: ellipsis;
+}
+
+.transaction .list {
+  margin-top: 3rem;
+  font-size: 0.875rem;
+}
+.transaction .list .item {
+  margin-bottom: 4rem;
+}
+.transaction .list .item .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.transaction .list .item .column {
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+  margin-bottom: 0.875rem;
+  min-width: 340px;
+  width: 50%;
+}
+.transaction .list .item .label {
+  flex-shrink: 0;
+  width: 100px;
+  color: rgb(103, 113, 133);
+}
+.transaction .list .item .content {
+  overflow: hidden;
+  padding-right: 0.875rem;
+  text-overflow: ellipsis;
+}
+.transaction .list .item .amount {
+  display: block;
+  padding: 0.25rem;
+  width: fit-content !important;
+  border: 1px solid rgb(209, 240, 219);
+  border-radius: 0.25rem;
+  background: rgb(209, 240, 219);
+  color: rgb(0, 135, 90);
+  cursor: pointer;
+}
+.transaction .list .item .to {
+  display: flex;
+}
+.transaction .list .item .to .addr {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.transaction .list .item .to .btc {
+  flex-shrink: 0;
+  padding-left: 0.875rem;
+}
+.transaction .list .item .newly {
+  color: rgb(0, 135, 90);
+}
